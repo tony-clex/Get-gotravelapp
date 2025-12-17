@@ -65,7 +65,7 @@ export async function getWeather(lat, lon) {
       temp: Math.round(currentData.main.temp),
       feelsLike: Math.round(currentData.main.feels_like),
       humidity: currentData.main.humidity,
-      windSpeed: Math.round(currentData.wind.speed * 3.6), // m/s → km/h
+      windSpeed: Math.round(currentData.wind.speed * 3.6), 
       description: currentData.weather[0].description,
       icon: currentData.weather[0].icon,
       condition: currentData.weather[0].main,

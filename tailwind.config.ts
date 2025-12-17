@@ -1,8 +1,15 @@
 import type { Config } from "tailwindcss";
+import tailwindAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx,html}",
+    "./components/**/*.{js,jsx,ts,tsx,html}",
+    "./pages/**/*.{js,jsx,ts,tsx,html}",
+    "./app/**/*.{js,jsx,ts,tsx,html}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -105,18 +112,8 @@ export default {
           "100%": { backgroundPosition: "200% 0" },
         },
       },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.5s ease-out forwards",
-        "fade-in-up": "fade-in-up 0.6s ease-out forwards",
-        "scale-in": "scale-in 0.3s ease-out forwards",
-        "slide-in-right": "slide-in-right 0.4s ease-out forwards",
-        "pulse-soft": "pulse-soft 2s ease-in-out infinite",
-        "float": "float 3s ease-in-out infinite",
-        "shimmer": "shimmer 2s linear infinite",
-      },
+ //
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindAnimate],
 } satisfies Config;
