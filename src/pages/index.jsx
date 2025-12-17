@@ -1,5 +1,5 @@
 import { HeroSection } from "../components/Hero/Herosection.jsx";
-import { DestinationView } from "../components/Destination/DestinationView.jsx";
+import { DestinationView } from "../components/Destination/Destinationview.jsx";
 import { LoadingState } from "../components/common/LoadingState.jsx";
 import { ErrorState } from "../components/common/ErrorState.jsx";
 import { useDestinationData } from "../hooks/useDestinationdata.jsx";

@@ -2,7 +2,7 @@
 import { DestinationHeader } from "./DestinationHeader.jsx";
 import { WeatherCard } from "../weather/WeatherCard.jsx";
 import { CurrencyConverter } from "../Currency/CurrencyConverter.jsx";
-import { LanguageInfo } from "../language/LanguageInfo.jsx";
+import { LanguageInfo } from "../language/languageinfo.jsx";
 import { AirportInfo } from "../Airport/Airportinfo.jsx";
 import { AttractionsList } from "../attractions/Attractionlist.jsx";
 import { ToursList } from "../tours/ToursList.jsx";
